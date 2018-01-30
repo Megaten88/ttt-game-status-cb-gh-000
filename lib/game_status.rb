@@ -17,12 +17,11 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    puts "Combination: #{win_combination}"
     winx = win_combination.all? do |cell|
-      puts "Cell: #{cell}"
       board[cell]=="X"
     end
     wino = win_combination.all? do |cell|
+      board[cell]=="O"
     end
     if winx || wino
       return win_combination
