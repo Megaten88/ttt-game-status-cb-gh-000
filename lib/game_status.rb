@@ -57,5 +57,5 @@ def winner(board)
   else
     return nil
   end
-  winner 
+  winner
 end
