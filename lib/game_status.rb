@@ -49,3 +49,11 @@ end
 def over?(board)
   won?(board)||full?(board)||draw?(board)
 end
+def winner(board)
+  win = won?(board)
+  winner = ""
+  if win
+    winner = board[win[0]]
+  end
+  winner 
+end
