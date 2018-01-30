@@ -23,8 +23,6 @@ def won?(board)
       board[cell]=="X"
     end
     wino = win_combination.all? do |cell|
-      puts "Cell: #{cell}"
-      board[cell]=="O"
     end
     if winx || wino
       return win_combination
